@@ -18,7 +18,6 @@
     "url": "https://github.com/staten-island-tech/quiz-game-jospeh-iorio/issues"
   },
   "homepage": "https://github.com/staten-island-tech/quiz-game-jospeh-iorio#readme",
-  "dependencies": {},
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
     "sass": "^1.32.8"
