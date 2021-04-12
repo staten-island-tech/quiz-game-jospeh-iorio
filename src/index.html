@@ -9,26 +9,30 @@
   <body>
     <div class="btns">
       <input type="button" class="reset-btn btn" value="Reset" />
+      <button id="start-btn" class="start-btn btn">Start</button>
       <button class="Submit-btn btn">Submit</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
     </div>
     <div class="container">
-      <div id="question1">
-        <ul class="item-list">
-          <li class="Q1">
-            Who Was the 8th President of the United States, Shown Here?
-          </li>
-          <div id="answer-buttons" class="btn-grid">
-            <button class="btn">Andrew Jackskon</button>
-            <button class="btn">Martin van Buren</button>
-            <button class="btn">Henry Ford</button>
-          </div>
-          <li class="Q1image">
-            <img
-              class="Q1-Image"
-              src="https://images.unsplash.com/photo-1585076799833-08afc3d50d74?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=694&q=80"
-            />
-          </li>
-        </ul>
+      <div class="questioncontainer">
+        <div id="question1">
+          <ul class="item-list">
+            <li class="Q1">
+              Who Was the 8th President of the United States, Shown Here?
+            </li>
+            <div id="answer-buttons" class="btn-grid">
+              <button class="btn">Andrew Jackskon</button>
+              <button class="btn">Martin van Buren</button>
+              <button class="btn">Henry Ford</button>
+            </div>
+            <li class="Q1image">
+              <img
+                class="Q1-Image"
+                src="https://images.unsplash.com/photo-1585076799833-08afc3d50d74?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=694&q=80"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <script src="js/index.js"></script>
