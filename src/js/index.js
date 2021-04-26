@@ -112,50 +112,5 @@ function clearStatusClass(element) {
   element.classList.remove("correct");
   element.classList.remove("wrong");
 }
-
-const questions = [
-  {
-    question: "What is the best animal",
-    answers: [
-      { text: "Monkey", correct: true },
-      { text: "Gorilla", correct: false },
-      { text: "Chimp", correct: false },
-      { text: "Lemur", correct: false },
-    ],
-  },
-  {
-    question: "Am I very tired right now",
-    answers: [
-      { text: "You bet", correct: true },
-      { text: "No", correct: false },
-      { text: "HAHAHAAH", correct: false },
-      { text: "Okay", correct: false },
-    ],
-  },
-  {
-    question: "Did I spend a lot of time on this project ",
-    answers: [
-      { text: "Kinda", correct: true },
-      { text: "So much! ", correct: false },
-      { text: "Swag", correct: false },
-      { text: "Okay", correct: false },
-    ],
-  },
-  {
-    question: "Did I give up many times",
-    answers: [
-      { text: "No", correct: false },
-      { text: "Yes", correct: true },
-      { text: "Only twice", correct: false },
-      { text: "Only three times", correct: false },
-    ],
-    question:
-      "What is 8+7 due to the fact I'm running out of questions to think of ",
-    answers: [
-      { text: "15", correct: true },
-      { text: "12", correct: false },
-      { text: "18", correct: false },
-      { text: "17", correct: false },
-    ],
-  },
-];
+import { questions } from 'js/questions.js
+let val = questions();

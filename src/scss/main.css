@@ -3,6 +3,7 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Gotham Rounded;
 }
 
 :root {
@@ -11,25 +12,22 @@
   --hue-correct: 145;
 }
 
-html,
 body {
   --hue: var(--hue-neutral);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 0;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70rem;
-  font-size: 62.5%;
-  background-color: #e4bad4;
+  width: 100vw;
+  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #f6dfeb;
 }
 
 body.correct {
@@ -41,93 +39,13 @@ body.wrong {
 }
 
 .container {
-  background-color: #f6dfeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3rem auto;
-  width: 90vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 10rem;
-  -webkit-box-shadow: 0 0 5rem;
-          box-shadow: 0 0 5rem;
-  left: 50%;
-  top: 50%;
-  border-radius: 2.5rem;
-  padding: 5rem;
-}
-
-.answer-buttons {
-  border-radius: 2rem;
-  padding: 2rem;
-  margin: 1rem auto;
-  background-color: #e4bad4;
-  color: white;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-  border: none;
-  width: 20rem;
-  height: 6rem;
-  font-size: 4rem;
-}
-
-.btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80vw;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-.btn {
-  --hue: var(--hue-neutral);
-  border: 1px solid hsl(var(--hue), 20%, 10%);
-  background-color: hsl(var(--hue), 20%, 10%);
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
   border-radius: 5px;
-  padding: 3rem 7rem;
-  color: white;
-  outline: none;
-}
-
-.btn:hover {
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #e4bad4;
-  color: #e4bad4;
-}
-
-.btn:active {
-  -webkit-transform: scale(1) translateY(-1px);
-          transform: scale(1) translateY(-1px);
-}
-
-.start-btn {
-  font-weight: bold;
-  display: -ms-grid;
-  display: grid;
-}
-
-.next-btn {
-  font-weight: bold;
-  display: -ms-grid;
-  display: grid;
-}
-
-.hide {
-  display: none;
+  padding: 10px;
+  -webkit-box-shadow: 0 0 5rem 2rem;
+          box-shadow: 0 0 5rem 2rem;
 }
 
 .btn-grid {
@@ -139,78 +57,34 @@ body.wrong {
   margin: 20px 0;
 }
 
-.question {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 70rem;
-  background-color: #e4bad4;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
 }
 
-body.correct {
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
   --hue: var(--hue-correct);
+  color: black;
 }
 
-body.wrong {
+.btn.wrong {
   --hue: var(--hue-wrong);
 }
 
-.container {
-  background-color: #f6dfeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3rem auto;
-  width: 90vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 10rem;
-  -webkit-box-shadow: 0 0 5rem;
-          box-shadow: 0 0 5rem;
-  left: 50%;
-  top: 50%;
-  border-radius: 2.5rem;
-  padding: 5rem;
-}
-
-.question {
-  background-color: #f6dfeb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3rem auto;
-  width: 90vw;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 10rem;
-  -webkit-box-shadow: 0 0 5rem;
-          box-shadow: 0 0 5rem;
-  left: 50%;
-  top: 50%;
-  border-radius: 2.5rem;
-  padding: 5rem;
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
 }
 
 .controls {
